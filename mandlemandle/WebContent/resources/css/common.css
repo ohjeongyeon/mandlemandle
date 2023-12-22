@@ -1,0 +1,104 @@
+@charset "UTF-8";
+/* 공통 */
+body{height:100%; background:#fff; color:black; font-size: 16px; font-weight:300;}
+*{box-sizing: border-box; margin:0; padding:0;}
+ul, li{list-style: none outside;}
+img{width:100%; height:100%;}
+a{text-decoration: none;}
+/* 우클릭 제거 */
+* {-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-o-user-select:none;user-select:none;-webkit-user-drag:none;-khtml-user-drag:none;-moz-user-drag:none;-o-user-drag:none;}
+
+/* main */
+.wrapper{display:flex; flex-direction:column; position:relative; min-width:1200px; min-height:100%; padding: 75px 0 260px;}
+
+/* header */ 
+.head{position:fixed; height:80px; top:0; left:0; right:0; width:100%; min-width:1280px; z-index: 12;}
+
+/* 네비게이션 */
+.nav{width: 1200px; margin: 0 auto;}
+.navi{width:100%; height:100%; display:flex; justify-content:center; position:absolute; top:0; left:0; right:0; background: #57D9FF;}
+.navList{display: flex; justify-content: center; width:1100px;}
+.nav-logo{width:100px; z-index:1; filter: invert(0%) sepia(0%) saturate(14%) hue-rotate(37deg) brightness(100%) contrast(200%);}
+.nav-logo>a{display:block; height: 100%;}
+.nav-contents{width:600px;}
+.searchBar{width:500px; display:flex; position:relative; align-items:center;}
+.searchBar form{width:100%}
+.searchBar input{width:85%; border:1px solid #bbb; border-radius:8px; padding:10px 12px; font-size:14px; border-color: #57D9FF;}
+.searchBar button{height:40px; width:50px; color:white; background-color:#47b6d8; border:white; border-radius:8px;}
+.nav-depth1{height:100%; margin-top:25px; margin-left:auto; text-align:center; float:right;}
+.nav-depth1>div{width:120px; height:50px; float:left;}
+.nav-depth1 a{height:100%; width:100%; color:black; font-weight:600; font-size:20px;}
+
+/* container */
+.container{display:flex; justify-content:center; min-width:1200px;}
+.content{width:1200px; height: 100%; display: flex; flex-direction:column; align-content:center; flex-wrap:wrap;}
+/* main */
+/* category */
+.category{margin-top:50px;}
+.category-depth1{height:100%; margin-top:25px;}
+.category-depth1>li:nth-child(1){margin-left:50px; font-size:30px; font-weight:600;}
+.category-depth2{height:100%; margin-top:25px; text-align:left;}
+.category-depth2>li{height:100%; float:left; width:120px; text-align:center;}
+.category-depth2 a{ font-size:20px; font-weight:600; color:black;}
+/* community */
+.comunity{width:100%; height:500px; display:flex; padding-top:50px;}
+.curious,.share{width:50%;}
+.curious-title,.share-title{ color:black; font-size:30px; font-weight:600;}
+/* mentor recommend */
+.recommend-wrapper{width:100%; height:500px; padding-top:50px;}
+.recommend-title{margin-left:50px; font-size:30px; font-weight:600;}
+.recommend-swiper{width:100%; height:200px; padding-top:50px;}
+.recommend-content{width:150px; height:150px;}
+.recommend-content>a{width:100%; height:100%; display:grid;}
+.recommend-mentor{width:90%; height:90%; display:flex; flex-direction:column; justify-self:center; align-self:center;}
+.mentor-profile{width:100%; height:30%; display:flex; justify-content:center;}
+.mentor-profile div{width:30%; height:100%;}
+.mentor-rating{display:flex;}
+.mentor-rating>img{width:20px; height:20px;}
+.mentor-name{width:100%; height:30%;}
+.mentor-workin{width:100%; height:30%;}
+swiper-container{width:100%; height:300px;}
+swiper-slide{text-align:center; font-size:18px; background:#fff; display:flex;
+justify-content:center; align-items:center;}
+swiper-slide img{display:block; width:100%; height:100%; object-fit:cover;}
+/* live reviews */
+.liveReview{width:100%; height:350px; padding-top:50px; margin-bottom:100px;}
+.liveReview-title{margin-left:50px; font-size:30px; font-weight:600;}
+.liveReview-content{width:100%; height:300px;}
+.reviews{text-align:center; font-size:18px; background:#fff; display:flex;
+justify-content:center; align-items:center; width:100px; height:100px;}
+.reviews img{display:block; width:100%; height:100%; object-fit:cover;}
+
+/* search */
+/* search mentor */
+.search-mentor{width:100%; height:450px; margin-top:50px;}
+.search-mentor-title{width:100%; height:50px;}
+.search-mentor-title p{margin-left:50px; font-size:30px; font-weight:600; margin:0;}
+.search-mentor-profile{width:100%; height:300px;}
+
+/* 사이드바 */
+.sideBar{display:block; position:fixed; bottom:110px; left:49%; margin:0 0 0 635px; z-index:10;}
+.fixed {position:absolute; bottom:360px}
+.top{text-align:center;}
+.top>a{color:black; font-size:25px; font-weight:600;}
+
+/* footer */
+.footArea{position:absolute; display:flex; height:260px; padding:45px; width:100%; min-width:1280px; margin:0 auto; background-color:#292929; justify-content:center;}
+.info{display:flex; width:1200px;}
+.infoList{display:flex; margin:0 auto;}
+.l1{width:110px;}
+.l1>li>a{text-decoration:none; color:white;}
+.l2>li{color:gray; padding-right:60px;}
+
+/* 마이페이지 폼 */
+#mypage-form table{margin:auto;}
+#mypage-form input{margin:5px;}
+/* 마이페이지 폼 끝 */
+/* 게시판 목록 시작 */
+.list-area{border:1px solid black; text-align:center; display: flex; flex-wrap: wrap; justify-content: center;}
+.list-area>tbody>tr:hover{background:gray; cursor:point;}
+/* 게시판 목록 끝 */
+/* 사진게시판 목록 */
+.thumbnail{border:1px solid white; width:220px; display:inline-block; margin:14px;}
+.thumbnail:hover{cursor:pointer; opacity:0.7;}
+/* 사진게시판 목록 끝 */
